@@ -5,6 +5,10 @@ Meu primeiro site para cliente
 
 Este é o projeto de um site responsivo desenvolvido para uma nutricionista com foco em SEO local para a região de Porto Alegre.
 
+##  Acesse o site
+Você pode visualizar o site online através do link abaixo:
+👉 [[https://jvdreissig31.github.io/site-pessoal-corrida/]([https://nutricionista-manuelapera.vercel.app/](https://nutricionista-manuelapera.vercel.app/))](https://jvdreissig31.github.io/nutricionista-porto-alegre/)
+
 ## Tecnologias
 - HTML5 / CSS3 / JavaScript
 - Deploy via Vercel
