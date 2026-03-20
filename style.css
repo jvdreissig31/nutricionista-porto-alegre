@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* RESET E BASES */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Montserrat', sans-serif; 
+}
+
+html { scroll-behavior: smooth; }
+
+body { 
+    color: #333; 
+    line-height: 1.6; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4 { 
+    font-weight: 700; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; position: relative; }
+.subpage { padding: 100px 0; }
+
+/* HEADER */
+header {
+    position: fixed; width: 100%; padding: 10px 50px;
+    display: flex; justify-content: space-between; align-items: center;
+    background: #fff; z-index: 1000; transition: 0.4s;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+.logo img { height: 65px; width: auto; display: block; }
+nav ul { display: flex; list-style: none; }   
+nav ul li { margin-left: 30px; }
+nav ul li a { text-decoration: none; color: #333; font-weight: 700; font-size: 0.9rem; transition: 0.3s; }
+nav ul li a:hover { color: #6b8e23; }
+
+/* HERO */
+.hero {
+    width: 100%;
+    padding-top: 85px;
+    min-height: calc(100vh - 85px); 
+    display: block;
+    align-items: stretch; 
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.hero-container {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 85px); 
+    align-items: stretch;
+}
+
+.hero-content {
+    flex: 1.2; 
+    background-color: #c5d6a4; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 60px 8%;
+    text-align: left; 
+    align-items: flex-end; 
+    color: #334d2d;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.hero-content h1 span{
+    color: #fffcd7;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.hero-content p {
+    font-size: 1.6rem;
+    max-width: 500px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.hero-image {
+    flex: 1; 
+    display: flex;
+    background-color: #fff; 
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    object-position: top center; 
+}
+
+.btn {
+    padding: 25px 35px;
+    background: #7a8274;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #334d2d;
+    transform: translateY(-2px);
+}
+
+/* SEÇÃO CONEXÃO */
+#conexao {
+    background: linear-gradient(rgba(250, 249, 246, 0.6), rgba(250, 249, 246, 0.6)), 
+                url('img/fundo11.png') no-repeat center/cover;
+    padding: 120px 20px; 
+    text-align: center;
+    border-top: 3px solid rgba(124, 137, 81, 0.3);
+    border-bottom: 3px solid rgba(124, 137, 81, 0.3);
+    position: relative; 
+}
+
+.logo-pera-conexao {
+    position: absolute;
+    top: 60px;  
+    left: 40px; 
+    width: 80px; 
+    height: auto;
+    transform: rotate(-35deg); 
+    opacity: 0.1; 
+    z-index: 1; 
+}
+
+.connection-wrapper {
+    background-color: #d1b0df; 
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    border-radius: 30px;
+    position: relative; 
+    z-index: 2;
+    border: 1px solid rgba(124, 137, 81, 0.15);
+}
+
+.connection-wrapper p {
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.connection-wrapper .highlight-text {
+    font-size: 1.6rem;
+    color: #2D3A2C;
+    margin: 25px 0;
+    font-style: italic;
+    text-align: justify;
+    text-align-last: justify;
+    display: block;
+}
+
+/* SOBRE */
+.section-light { background-color: #FAF9F6; text-align: left; }
+.about-wrapper { display: flex; align-items: center; gap: 60px; }
+.about-text { flex: 1; }
+.about-text h2 { 
+    font-size: 2.8rem; 
+    margin-bottom: 20px; 
+    color: #7c8951; 
+    font-weight: 200; 
+    letter-spacing: 0.5px; 
+    text-transform: uppercase; 
+}
+.about-text p{text-align: justify;}
+.about-profile { flex: 0 0 350px; text-align: center;}
+.profile-frame { width: 100%; height: 450px; border-radius: 175px 175px 0 0; overflow: hidden; margin-bottom: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+.profile-frame img { width: 100%; height: 140%; object-fit: cover; }
+
+/* SEÇÃO: METODOLOGIA */
+#metodologia { 
+    background: linear-gradient(rgba(250, 249, 246, 0.6), rgba(45, 58, 44, 1)), 
+                url('img/fundo14.png') no-repeat center/cover;
+    padding: 140px 0;
+}
+
+.como-funciona h2 { 
+    font-size: 2.2rem; 
+    line-height: 1.2;  
+    margin-bottom: 20px; 
+    color: #2D3A2C; 
+    font-weight: 400; 
+    letter-spacing: 0.5px; 
+    text-transform: uppercase;
+    text-align: center; 
+}
+
+/* Aumentando o tamanho do Card */
+.card-metodologia { 
+    background: #dee5cd; 
+    padding: 60px 50px; 
+    border-radius: 8px; 
+    max-width: 850px;  
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.card-metodologia ul li {
+    font-size: 1.7rem; 
+    line-height: 1.5;
+    margin-bottom: 25px; 
+    list-style: none;
+    position: relative;
+    padding-left: 35px; 
+    color: #2D3A2C; 
+}
+
+.card-metodologia ul li::before { 
+    content: "";
+    position: absolute; 
+    left: 0; 
+    top: 12px; 
+    width: 12px;
+    height: 12px; 
+    background-color: #2D3A2C;
+    border-radius: 50%;
+}
+
+/* SEÇÃO: RESULTADOS */
+#resultados-secao { 
+    background-color: #2D3A2C;
+    padding: 170px 0;
+}
+#resultados-secao h2 { 
+    color: #fffcd7; 
+    text-align: center; 
+    margin-bottom: 40px;
+    font-size: 1.8rem; 
+    text-transform: uppercase;
+}
+
+.atendimento-grid-resultados {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.atendimento-card { 
+    background: #dee5cd; 
+    padding: 35px;
+    flex: 1;
+    max-width: 480px; 
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.atendimento-card h3 { text-align: center; margin-bottom: 20px; color: #2D3A2C; }
+.atendimento-card ul li {
+    font-size: 1.0rem; 
+    margin-bottom: 12px;
+    list-style: none;
+    position: relative;
+    padding-left: 25px;
+}
+
+.atendimento-card ul li::before { 
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    top: 8px;
+    width: 7px;
+    height: 7px;
+    background-color: #2D3A2C;
+    border-radius: 50%;
+}
+
+/* CONSULTA (Etapas) */
+#consulta{ 
+    background: linear-gradient(rgba(250, 249, 246, 0.6), rgba(250, 249, 246, 0.6)), 
+            url('img/fundo31.png') no-repeat center/cover;
+    position: relative; 
+    overflow: hidden; 
+    min-height: 500px; 
+}
+.logo-pera-consulta {
+    position: absolute;
+    top: 100px;  
+    right: 40px; 
+    width: 80px; 
+    height: auto;
+    opacity: 0.3; 
+    z-index: 999;
+    transform: scaleX(-1) rotate(-35deg);
+}
+.section-title-left { font-size: 2.3rem; margin-bottom: 20px; color: #7c8951; font-weight: 200; letter-spacing: 0.5px; text-transform: uppercase; text-align: center; }
+.etapas-vertical { max-width: 900px; margin: 0 auto 80px 0; text-align: left; }
+.etapa-item-new { display: flex; align-items: flex-start; gap: 25px; margin-bottom: 35px; }
+.numero-new { background: #96a172; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: bold; flex-shrink: 0; }
+.etapa-content h4 { font-size: 1.1rem; font-weight: 700; margin-bottom: 5px; text-transform: uppercase; color: #2D3A2C; }
+.etapa-content p { font-size: 1rem; line-height: 1.5; }
+
+/* PLANOS */
+.section-green-dark { background-color: #2D3A2C; text-align: center; }
+.planos-title { font-size: 2.3rem; margin-bottom: 20px; color: #7c8951; font-weight: 200; letter-spacing: 0.5px; text-transform: uppercase; }
+.pricing { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.plan-card { background: white; border-radius: 30px; padding: 40px 30px; flex: 1; max-width: 350px; min-width: 280px; display: flex; flex-direction: column; }
+.plan-card.featured { border: 3px solid #6b8e23; transform: scale(1.05); }
+.sessions { color: #6b8e23; font-weight: 700; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+.plan-features { list-style: none; text-align: left; margin-bottom: 30px; flex-grow: 1; }
+.plan-features li { margin-bottom: 10px; font-size: 0.9rem; color: #555; }
+
+/* CTA Final */
+.cta-final { 
+    margin-top: 60px; padding: 40px; border-radius: 20px; 
+    background: rgba(255, 255, 255, 0.05); 
+    border: 1px solid rgba(107, 142, 35, 0.3);
+}
+.cta-final p { color: #ffffff; font-size: 1.1rem; line-height: 1.6; }
+.cta-final p strong { color: #b2bd8e; }
+
+/* FOOTER */
+footer { background: #1a1a1a; color: white; padding: 80px 0; text-align: center; }
+.insta-link { color: #d0acde; font-size: 1.5rem; text-decoration: none; font-weight: 700; display: block; margin: 20px 0; }
+.btn-address { color: white; text-decoration: none; border: 1px solid #d0acde; padding: 15px 25px; border-radius: 5px; display: inline-block; transition: 0.3s; margin-bottom: 20px; font-weight: 700; }
+.cancel-policy { margin-top: 20px; color: yellow; font-size: 1.0rem; }
+.footer-avatar { width: 200px; height: 200px; border-radius: 50%; border: 3px solid #d0acde; object-fit: cover; object-position: center top; margin: 30px auto; display: block; box-shadow: 0 5px 15px rgba(0,0,0,0.4); }
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    header { padding: 10px 20px; flex-direction: column; height: auto; }
+    .logo img { height: 50px; }
+    nav ul { margin-top: 15px; padding: 0; justify-content: center; gap: 10px; }
+    nav ul li { margin-left: 10px; margin-right: 10px; }
+    .hero { padding-top: 120px; height: auto; }
+    .hero-container { flex-direction: column; }
+    .hero-content { flex: none; width: 100%; padding: 40px 10%; align-items: center; text-align: center; order: 2; }
+    .hero-content h1 { font-size: 2.2rem; text-align: center; margin-bottom: 30px; }
+    .hero-content p { font-size: 1.2rem; text-align: center; max-width: 100%; }
+    .hero-image { flex: none; width: 100%; height: 350px; order: 1; }
+    .hero-image img { object-fit: cover; }
+    .about-wrapper { flex-direction: column; text-align: center; }
+    .about-profile { flex: none; width: 100%; }
+    .atendimento-grid-resultados { flex-direction: column; align-items: center; }
+    .atendimento-card { width: 100%; }
+    .pricing { flex-direction: column; align-items: center; }
+    .plan-card { width: 100%; max-width: 100%; }
+    .plan-card.featured { transform: scale(1); }
+    .connection-wrapper { padding: 30px 20px; }
+    .connection-wrapper p, .connection-wrapper .highlight-text { font-size: 1.1rem; text-align: center; text-align-last: center; }
+    .btn { width: 100%; text-align: center; }
+}
