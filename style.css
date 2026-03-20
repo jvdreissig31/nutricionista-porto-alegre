@@ -341,25 +341,89 @@ footer { background: #1a1a1a; color: white; padding: 80px 0; text-align: center;
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
-    header { padding: 10px 20px; flex-direction: column; height: auto; }
-    .logo img { height: 50px; }
-    nav ul { margin-top: 15px; padding: 0; justify-content: center; gap: 10px; }
-    nav ul li { margin-left: 10px; margin-right: 10px; }
-    .hero { padding-top: 120px; height: auto; }
-    .hero-container { flex-direction: column; }
-    .hero-content { flex: none; width: 100%; padding: 40px 10%; align-items: center; text-align: center; order: 2; }
-    .hero-content h1 { font-size: 2.2rem; text-align: center; margin-bottom: 30px; }
-    .hero-content p { font-size: 1.2rem; text-align: center; max-width: 100%; }
-    .hero-image { flex: none; width: 100%; height: 350px; order: 1; }
-    .hero-image img { object-fit: cover; }
-    .about-wrapper { flex-direction: column; text-align: center; }
-    .about-profile { flex: none; width: 100%; }
-    .atendimento-grid-resultados { flex-direction: column; align-items: center; }
-    .atendimento-card { width: 100%; }
-    .pricing { flex-direction: column; align-items: center; }
-    .plan-card { width: 100%; max-width: 100%; }
-    .plan-card.featured { transform: scale(1); }
-    .connection-wrapper { padding: 30px 20px; }
-    .connection-wrapper p, .connection-wrapper .highlight-text { font-size: 1.1rem; text-align: center; text-align-last: center; }
+    header { 
+        padding: 10px; 
+        flex-direction: column; 
+        height: auto; 
+        position: relative;
+    }
+    
+    .logo img { height: 45px; margin-bottom: 10px; }
+    
+    nav ul { 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 10px; 
+    }
+    
+    nav ul li { margin: 0 5px; }
+
+    .hero { padding-top: 20px; min-height: auto; }
+    
+    .hero-container { 
+        flex-direction: column; 
+        min-height: auto;
+    }
+
+    .hero-image { 
+        order: 1; 
+        width: 100%; 
+        height: 300px; 
+    }
+    
+    .hero-image img { 
+        object-fit: cover; 
+        height: 100%;
+    }
+
+    .hero-content { 
+        order: 2; 
+        width: 100%; 
+        padding: 40px 20px; 
+        align-items: center; 
+        text-align: center;
+        flex: none;
+    }
+
+    .hero-content h1 { 
+        font-size: 2rem; 
+        text-align: center; 
+        margin-bottom: 20px; 
+        width: 100%;
+    }
+
+    .hero-content h1 span {
+        font-size: 1.5rem;
+        display: block; 
+    }
+
+    .hero-content p { 
+        font-size: 1.1rem; 
+        text-align: center;
+        max-width: 100%; 
+        margin: 0 auto 30px auto;
+    }
+
+    .btn { 
+        width: 100%; 
+        max-width: 300px; 
+        padding: 20px;
+        font-size: 1.1rem;
+        text-align: center; 
+    }
+
+    .about-wrapper { flex-direction: column; gap: 30px; }
+    .about-profile { flex: none; width: 100%; max-width: 300px; }
+    .connection-wrapper p, .connection-wrapper .highlight-text { 
+        font-size: 1.1rem; 
+        text-align: center; 
+        text-align-last: center; 
+    }
+}
+
+@media (max-width: 380px) {
+    .hero-content h1 { font-size: 1.8rem; }
+    .hero-content p { font-size: 1rem; }
+}ight-text { font-size: 1.1rem; text-align: center; text-align-last: center; }
     .btn { width: 100%; text-align: center; }
 }
